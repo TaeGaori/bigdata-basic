@@ -41,10 +41,12 @@ print()
 print('-' * 50)
 
 for i in range(1,31,2):
-    print(i, end = ' ')
+    print(i, end = ' ') # 홀수만
 
 print()
 print('-' * 50)
 
+# 거꾸로 30 -> 1
 for i in range(30, 0, -1):
     print(i , end = ' ')
+
