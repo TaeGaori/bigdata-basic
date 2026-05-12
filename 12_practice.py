@@ -172,7 +172,7 @@
 
 #------------------------------------------------------------------------------------------------
 # PT - 11
-files = ['report.hwp', 'newJeans', 'Attention.png', 'ditto.jpg','address.xslx']
+# files = ['report.hwp', 'newJeans', 'Attention.png', 'ditto.jpg','address.xslx']
 
-result = filter(lambda x: 'jpg' in x or 'png' in x, files)
-print(list(result))
+# result = filter(lambda x: 'jpg' in x or 'png' in x, files)
+# print(list(result))
