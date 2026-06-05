@@ -1,5 +1,4 @@
 class Characher:
-    EHP = 100
 
     def __init__(self, name, hp, attack):
         self.name = name
@@ -10,8 +9,13 @@ class Characher:
         print(f'이름 : {self.name} | HP : {self.hp} | 공격력 : {self.attack}')
     
     def attack_enemy(self, target):
-        cls.EHP -= self.attack
-        print(f'{self.name}이(가) {target}을 공격! {self.attack}피해!')
+        damage = self.attack
+        if target.is_blocking:
+            damage = damage // 2
+        target.hp -= damage
+        print(f'{self.name}이(가) {target.name}을 공격! {damage}피해!')
+        if target.is_alive() < 0:
+            print("{target.name}이(가) 쓰러졌다!")
 
     def is_alive():
         if self.hp > 0:
